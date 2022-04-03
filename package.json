@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "buildes": "node ./esbuild.js",
+    "buildes": "NODE_ENV=production node ./esbuild.js",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
