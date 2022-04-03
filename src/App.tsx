@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 
@@ -16,19 +15,10 @@ function App() {
         .catch(function (error) {
           console.log(error);
         });
-      axios
-        .get("/api/status")
-        .then(function (response) {
-          setStatus(JSON.stringify(response.data))
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-  });
+  },[]);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           {test}
           {status}

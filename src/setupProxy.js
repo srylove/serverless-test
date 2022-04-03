@@ -6,7 +6,7 @@ module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: "https://proud-art-ae58.plutoczy.workers.dev", //后台服务器地址
+      target: "http://127.0.0.1:8787", //后台服务器地址
       changeOrigin: true,
       pathRewrite: {
         "^/api": "",
