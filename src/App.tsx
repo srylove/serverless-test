@@ -4,7 +4,6 @@ import axios from "axios";
 
 function App() {
   const [test,setTest] = useState('')
-  const [status,setStatus] = useState('')
   useEffect(() => {
       axios
         .get("/api/api/test")
@@ -21,7 +20,7 @@ function App() {
       <header className="App-header">
         <p>
           {test}
-          {status}
+          <br/>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
